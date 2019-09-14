@@ -1,0 +1,22 @@
+<ion-card>
+
+  <ion-card-header>
+    <ion-card-title>Crear cuenta</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <form>
+      <ion-input type="text" placeholder="Usuario" [(ngModel)]="username" name="username"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password"></ion-input>
+      <ion-input type="text" placeholder="Nombre" [(ngModel)]="name" name="name"></ion-input>
+      <ion-input type="text" placeholder="Apellido" [(ngModel)]="lastname" name="lastname"></ion-input>
+      <ion-input type="text" placeholder="Correo electrónico" [(ngModel)]="email" name="email"></ion-input>
+    </form>
+
+    <ion-button color="success" (click)="postlogup()">Crear</ion-button>
+    <ion-button color="dark" fill="clear" routerLink="/login">Iniciar sesión</ion-button>
+
+  </ion-card-content>
+
+</ion-card>

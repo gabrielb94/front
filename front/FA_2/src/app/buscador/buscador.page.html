@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>buscador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+
+    <ion-input placeholder="Nombre"></ion-input>
+
+    <ion-input placeholder="Actividad"></ion-input>
+
+    <ion-input placeholder="Barrio"></ion-input>
+
+  </form>
+
+  <ion-button routerLink="null">Buscar</ion-button>
+  <ion-button routerLink="/principal">Volver</ion-button>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-title>Nombre</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-title>Barrio</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-title>Acciones</ion-title>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row *ngFor="let item of entidades">
+
+      <ion-col>
+        <ion-title>{{ item.name }}</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-title>{{ item.zone }}</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-title>{{ item.actions }}</ion-title>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

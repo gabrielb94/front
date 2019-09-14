@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button routerLink="/crear-evento">Nuevo Evento</ion-button>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Lista de eventos</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let ev of eventos">
+      {{ev.title}}
+    </ion-item>
+  </ion-list>
+
+  <ion-button routerLink="/home-admin">Volver</ion-button>
+
+</ion-content>

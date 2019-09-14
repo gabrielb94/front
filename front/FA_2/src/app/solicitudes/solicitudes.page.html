@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>solicitudes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Lista de solicitudes</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let ev of solicitudes">
+      {{ev.title}}
+    </ion-item>
+  </ion-list>
+
+  <ion-button routerLink="/home-admin">Volver</ion-button>
+
+</ion-content>

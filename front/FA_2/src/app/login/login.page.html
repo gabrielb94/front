@@ -1,0 +1,19 @@
+<ion-card>
+
+  <ion-card-header>
+    <ion-card-title>Iniciar sesión</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <form>
+      <ion-input type="text" placeholder="Nombre de usuario" [(ngModel)]="username" name="username"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password"></ion-input>
+    </form>
+
+    <ion-button color="success" (click)="postlogin()">Iniciar</ion-button>
+    <ion-button color="dark" fill="clear" routerLink="/logup">Crear cuenta</ion-button>
+
+  </ion-card-content>
+
+</ion-card>

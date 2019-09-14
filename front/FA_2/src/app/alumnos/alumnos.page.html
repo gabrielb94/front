@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>alumnos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Lista de alumnos</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let ev of alumnos">
+      {{ev.title}}
+    </ion-item>
+  </ion-list>
+
+  <ion-button routerLink="/home-admin">Volver</ion-button>
+
+</ion-content>
